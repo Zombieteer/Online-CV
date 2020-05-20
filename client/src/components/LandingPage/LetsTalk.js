@@ -44,7 +44,6 @@ export const LetsTalk = () => {
   const onChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
   const submitHandler = async (e) => {
-    // console.log(form);
     e.preventDefault();
 
     const config = {

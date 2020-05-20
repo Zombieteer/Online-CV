@@ -35,7 +35,6 @@ export const ModalTempelate = ({ open, handleClose, handleopen, type }) => {
 
   return (
     <Fragment>
-      {console.log("logo")}
       {type === "logo" && (
         <Modal
           aria-labelledby="transition-modal-title"

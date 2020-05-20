@@ -7,6 +7,7 @@ import Contact from "./Contact";
 import ModalTempelate from "../layouts/ModalTempelate";
 import rightI from "../../../src/public/i.png";
 import shobhit from "../../../src/public/logo.jpeg";
+import SN_logo from "../../../src/public/SN_logo.png";
 import html5 from "../../../src/public/HTML5.svg";
 import css3 from "../../../src/public/css3.svg";
 import django from "../../../src/public/django.svg";
@@ -46,7 +47,6 @@ export const LandingPage = () => {
   var i = 1;
 
   const [open, setOpen] = React.useState(false);
-  console.log(open);
 
   const handleOpen = () => {
     setOpen(true);
@@ -89,10 +89,10 @@ export const LandingPage = () => {
   return (
     <div>
       <div className="nav">
-        <div className="logo" onClick={openImage}>
-          <img src={shobhit} className="nav-home-logo" alt="shobhit-logo" />
+        <div className="logo">
+          <img src={SN_logo} className="nav-home-logo" alt="shobhit-logo" />
         </div>
-        <div>
+        <div style={{ display: "flex" }}>
           <ul className="nav-item-link">
             <li>About</li>
             <li>
@@ -111,6 +111,9 @@ export const LandingPage = () => {
               </Link>
             </li>
           </ul>
+          <div className="logo" onClick={openImage}>
+            <img src={shobhit} className="user-logo" alt="shobhit-logo" />
+          </div>
         </div>
       </div>
 
