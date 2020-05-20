@@ -4,6 +4,7 @@ const nodemailer = require("nodemailer");
 const config = require("./config");
 var router = express.Router();
 var cors = require("cors");
+const path = require("path");
 
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -14,7 +15,15 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.get("/", (req, res) => res.send({ msg: "welcome" }));
+// app.get("/", (req, res) => res.send({ msg: "welcome" }));
+// Serve static assests if in production
+if (process.env.NODE_ENV === "production") {
+  // set static folder
+  app.use(express.static("client/build"));
+  app.get("*", (req, res) => {
+    res.sendfile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+}
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server Started at ${PORT}`));
