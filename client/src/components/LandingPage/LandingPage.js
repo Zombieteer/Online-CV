@@ -4,6 +4,7 @@ import BackgroungLogo from "./BackgroungLogo";
 import ProjectSection from "./ProjectSection";
 import LetsTalk from "./LetsTalk";
 import Contact from "./Contact";
+import About from "./About";
 import ModalTempelate from "../layouts/ModalTempelate";
 import rightI from "../../../src/public/i.png";
 import shobhit from "../../../src/public/logo.jpeg";
@@ -94,7 +95,12 @@ export const LandingPage = () => {
         </div>
         <div style={{ display: "flex" }}>
           <ul className="nav-item-link">
-            <li>About</li>
+            <li>
+              {" "}
+              <Link activeClass="active" to="about" spy={true} smooth={true}>
+                About
+              </Link>
+            </li>
             <li>
               <Link activeClass="active" to="project" spy={true} smooth={true}>
                 Projects
@@ -136,6 +142,7 @@ export const LandingPage = () => {
           </div>
         </div>
       </div>
+      <About />
       <ProjectSection />
       <LetsTalk />
       <Contact />

@@ -51,7 +51,7 @@ export const ModalTempelate = ({ open, handleClose, handleopen, type }) => {
           <Fade in={open}>
             <div className={classes.paper}>
               <div onClick={handleClose} style={{ cursor: "pointer" }}>
-                <CancelIcon style={{ float: "right" }} />
+                <CancelIcon style={{ float: "right", fontSize: 35 }} />
               </div>
               <div style={{ display: "flex", width: "85vh" }}>
                 <img
