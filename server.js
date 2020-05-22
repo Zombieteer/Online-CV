@@ -53,6 +53,7 @@ transporter.verify((error, success) => {
 app.use(express.json());
 
 app.post("/", (req, res) => {
+  console.log("into the post request");
   var name = req.body.name;
   var email = req.body.email;
   var message = req.body.message;
