@@ -8,8 +8,8 @@ export const Project = ({
       <img className="mac-screen" src={image} alt="mac-screen"></img>
       <div class="info">
         <img className="company-logo" src={title} alt="company-logo"></img>
-        <h2 style={{ color: `${detail_color}`, fontSize: 30 }}>{detail}</h2>
-        <h3 style={{ color: `${detail_color}`, fontSize: 25 }}>
+        <h2 style={{ color: `${detail_color}`, fontSize: 25 }}>{detail}</h2>
+        <h3 style={{ color: `${detail_color}`, fontSize: 21 }}>
           Tech Used: {techUsed}
         </h3>
         <a

@@ -21,6 +21,7 @@ import nodejs from "../../../src/public/nodejs.svg";
 import python from "../../../src/public/python.svg";
 import react from "../../../src/public/REACT.svg";
 import redux from "../../../src/public/redux.svg";
+import grass from "../../../src/public/grass.svg";
 import { Link, Events } from "react-scroll";
 
 import FavoriteIcon from "@material-ui/icons/Favorite";
@@ -98,7 +99,7 @@ export const LandingPage = () => {
             <li>
               {" "}
               <Link activeClass="active" to="about" spy={true} smooth={true}>
-                About
+                My skills
               </Link>
             </li>
             <li>
@@ -141,6 +142,7 @@ export const LandingPage = () => {
             <img className="rightImage" src={rightI} alt="apple products"></img>
           </div>
         </div>
+        <div className="grass"></div>
       </div>
       <About />
       <ProjectSection />

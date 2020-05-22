@@ -54,6 +54,12 @@
   height: 85vh;
 }
 
+/* .grass {
+  height: 15%;
+  opacity: 0.6;
+  background-image: url(../../../src//public/grass.svg);
+} */
+
 .about_front {
   display: flex;
   justify-content: space-around;
@@ -236,5 +242,13 @@ textarea {
 
 .contact_icon {
   margin: 20px;
-  color: grey;
+  color: #000;
+}
+
+/*about */
+.DP {
+}
+
+.about {
+  display: flex;
 }
