@@ -55,7 +55,7 @@ export const LetsTalk = () => {
 
     try {
       setMailSendIcon(true);
-      await axios.post("http://localhost:5000/", form, config);
+      await axios.post("/", form, config);
       setForm({ name: "", email: "", message: "" });
       setMailSendIcon(false);
       handleOpen();
