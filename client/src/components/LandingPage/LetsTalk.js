@@ -16,9 +16,11 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     backgroundColor: "#fff",
-    border: "3px solid orange",
+    border: "2px solid orange",
+    outline: "none",
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
+    width: "20%",
   },
 }));
 
@@ -66,7 +68,7 @@ export const LetsTalk = () => {
   return (
     <Fragment>
       <div name="talk">
-        <h1 className="head heading" style={{ paddingBottom: "1%" }}>
+        <h1 className="head heading" style={{ paddingBottom: "2%" }}>
           LET'S TALK
         </h1>
         <div className="outer_contact_div">
@@ -142,7 +144,11 @@ export const LetsTalk = () => {
             <div onClick={handleClose} style={{ cursor: "pointer" }}>
               <CancelIcon style={{ float: "right" }} />
             </div>
-            <h2 id="transition-modal-description">Message has been sent...</h2>
+            <div>
+              <h2 id="transition-modal-description">
+                Message has been sent...
+              </h2>
+            </div>
           </div>
         </Fade>
       </Modal>

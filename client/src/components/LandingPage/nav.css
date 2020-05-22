@@ -94,18 +94,23 @@
 
 /*project section*/
 
+.project-card {
+  margin: 30px;
+  box-shadow: 1px 10px 20px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
+}
 .container {
   margin: 0 5%;
 }
 .heading {
   text-align: center;
-  padding-bottom: 5%;
+  /* padding-bottom: 5%; */
   /* border-bottom: 1px solid #42526e; */
 }
 
 .project {
   display: flex;
-  margin-bottom: 50px;
+  margin: 25px 0px;
   justify-content: center;
 }
 
@@ -160,15 +165,18 @@
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  width: 60vw;
-  height: 70vh;
+  width: 60%;
+  height: 70%;
   padding: 20px 0px;
+  box-shadow: 1px 10px 20px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .form {
-  width: 35%;
+  width: 45%;
+  padding-left: 30px;
 }
 
 .Get-in-touch {
@@ -195,7 +203,7 @@ input.input1 {
 }
 .input1 {
   display: block;
-  width: 85%;
+  width: 70%;
   background: #e6e6e6;
   /* font-family: Montserrat-Bold; */
   font-size: 15px;
@@ -241,7 +249,7 @@ textarea {
 }
 
 .contact_icon {
-  margin: 20px;
+  /* margin: 20px; */
   color: #000;
 }
 

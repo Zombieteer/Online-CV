@@ -19,8 +19,8 @@ export const Contact = () => {
       >
         Find Me at
       </div>
-      <div>
-        <Tooltip title="LinkedIn" arrow style={{ padding: "20px 25px" }}>
+      <div style={{ padding: "20px 0px" }}>
+        <Tooltip title="LinkedIn" arrow style={{ padding: "0px 25px" }}>
           <a
             href="https://www.linkedin.com/in/shobhit-nigam/"
             target="_blank"
@@ -29,7 +29,7 @@ export const Contact = () => {
             <LinkedInIcon className="contact_icon" />
           </a>
         </Tooltip>
-        <Tooltip title="Github" arrow style={{ padding: "20px 25px" }}>
+        <Tooltip title="Github" arrow style={{ padding: "0px 25px" }}>
           <a
             href="https://github.com/Zombieteer"
             target="_blank"
@@ -38,7 +38,7 @@ export const Contact = () => {
             <GitHubIcon className="contact_icon" />
           </a>
         </Tooltip>
-        <Tooltip title="Twitter" arrow style={{ padding: "20px 25px" }}>
+        <Tooltip title="Twitter" arrow style={{ padding: "0px 25px" }}>
           <a
             href="https://twitter.com/ShobhitNigam37"
             target="_blank"
@@ -47,7 +47,7 @@ export const Contact = () => {
             <TwitterIcon className="contact_icon" />
           </a>
         </Tooltip>
-        <Tooltip title="Instagram" arrow style={{ padding: "20px 25px" }}>
+        <Tooltip title="Instagram" arrow style={{ padding: "0px 25px" }}>
           <a
             href="https://www.instagram.com/shobhman/"
             target="_blank"
