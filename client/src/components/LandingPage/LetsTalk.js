@@ -49,13 +49,12 @@ export const LetsTalk = () => {
     const config = {
       header: {
         "Content-Type": "application/json",
-        "X-Requested-With": "XMLHttpRequest",
       },
     };
 
     try {
       setMailSendIcon(true);
-      await axios.post("/", form, config);
+      await axios.post("http://localhost:5000/", form, config);
       setForm({ name: "", email: "", message: "" });
       setMailSendIcon(false);
       handleOpen();
