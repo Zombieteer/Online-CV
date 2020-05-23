@@ -46,9 +46,11 @@ export const LetsTalk = () => {
 
   const toggle = (e) => {
     setActive([false, false, false]);
-    e.target.name === "name" && setActive([true, false, false]);
-    e.target.name === "email" && setActive([false, true, false]);
-    e.target.name === "message" && setActive([false, false, true]);
+    e.target.name === "name"
+      ? setActive([true, false, false])
+      : e.target.name === "email"
+      ? setActive([false, true, false])
+      : e.target.name === "message" && setActive([false, false, true]);
   };
   const onChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
