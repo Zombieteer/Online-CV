@@ -45,10 +45,9 @@
         $(".loader-wrapper").fadeOut('fast')
         document.body.classList.remove("stop-scroll");
       }, 2000);
-    }
-    )
-
+    })
   </script>
+
   <div class="loader-wrapper" style=" position: fixed;
                                       display: flex;
                                       flex-direction: column;
@@ -58,7 +57,7 @@
                                       justify-content: center;
                                       align-items: center;
                                       background-color: #1e1e1e;">
-    <img src='./loadingImage.PNG'></img>
+    <img src='./loadingImage.PNG' class='loadinglogo'></img>
     <img src='./loadinggif.svg' class='loadinggif' style='  background-color: #1e1e1e;'></img>
   </div>
   <div id="root"></div>

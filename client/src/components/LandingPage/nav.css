@@ -39,7 +39,7 @@
 }
 
 .nav {
-  height: 10%;
+  height: 35px;
   display: flex;
   justify-content: space-between;
   padding: 15px 70px;
@@ -100,26 +100,39 @@
   background-image: url(../../../src//public/grass.svg);
 } */
 
+.tech_img {
+  z-index: -1;
+  height: 5rem;
+  width: 5rem;
+  opacity: 0.35;
+  position: absolute;
+}
+
 .about_front {
   display: flex;
   justify-content: space-around;
   /* padding-top: 50px; */
   /* height: 100%; */
   min-height: 80vh;
-  padding: 0 20px;
+  padding: 0 5%;
 }
 
-.head {
+.head1 {
   font-size: 55px;
   margin-bottom: 0;
 }
-
 .head2 {
+  font-size: 38px;
+  margin: 0;
+}
+
+.head3 {
   font-size: 30px;
 }
 
-.head,
-.head2 {
+.head1,
+.head2,
+.head3 {
   color: #42526e;
 }
 
@@ -130,6 +143,10 @@
 .rightImage {
   height: 100%;
   width: 100%;
+}
+
+.right-nav-div {
+  display: flex;
 }
 
 /*project section*/
@@ -147,6 +164,7 @@
   padding-bottom: 1px;
 }
 .heading {
+  padding-top: 20px;
   text-align: center;
   /* padding-bottom: 5%; */
   /* border-bottom: 1px solid #42526e; */
@@ -170,6 +188,7 @@
 .company-logo {
   padding-top: 15px;
   height: 10%;
+  width: 35%;
 }
 
 .clickable-button {
@@ -196,7 +215,6 @@
   background: orange;
   /* background: -webkit-linear-gradient(left, orange, orangered); */
   background: -webkit-linear-gradient(left, aliceblue, #c3e9ff);
-  height: 100vh;
 }
 .outer_contact_div {
   width: 100%;
@@ -319,4 +337,82 @@ textarea {
 
 .about {
   display: flex;
+}
+
+@media only screen and (max-width: 760px) {
+  .mail_img {
+    display: none;
+  }
+  .input1 {
+    width: 80%;
+  }
+  .input-div {
+    /* width: 90%; */
+  }
+  .inner_contact_div {
+    width: 90%;
+  }
+  .form {
+    width: 100%;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-card {
+    margin: 30px 0;
+  }
+  .mac-screen {
+    width: 100%;
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px;
+    justify-content: center;
+  }
+  .info {
+    width: 100%;
+  }
+  .company-logo {
+    padding-top: 15px;
+    /* height: 10%; */
+    width: 50%;
+  }
+  .company-logo-div {
+    text-align: center;
+  }
+  .rightImage-Div {
+    display: none;
+  }
+  .head1 {
+    /* font-size: initial; */
+    font-size: 2em !important;
+  }
+  .head2 {
+    font-size: 1.5em !important;
+  }
+  .head3 {
+    font-size: 1.17em !important;
+  }
+  .head4 {
+    font-size: 1em !important;
+  }
+  .tech_img {
+    height: 2rem;
+    width: 2rem;
+  }
+  .right-nav-div {
+    display: none;
+  }
+  .nav {
+    padding: 15px 10px;
+    justify-content: center;
+  }
+  .loadinggif {
+    width: 25%;
+  }
+  .loadinglogo {
+    width: 80%;
+  }
 }

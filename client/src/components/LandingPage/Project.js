@@ -14,11 +14,25 @@ export const Project = ({
         <div className="project">
           <img className="mac-screen" src={image} alt="mac-screen"></img>
           <div class="info">
-            <img className="company-logo" src={title} alt="company-logo"></img>
-            <h2 style={{ color: `${detail_color}`, fontSize: 25 }}>{detail}</h2>
-            <h3 style={{ color: `${detail_color}`, fontSize: 21 }}>
-              Tech Used: {techUsed}
+            <div className="company-logo-div">
+              <img
+                className="company-logo"
+                src={title}
+                alt="company-logo"
+              ></img>
+            </div>
+            <h3
+              className="head3"
+              style={{ color: `${detail_color}`, fontSize: 25 }}
+            >
+              {detail}
             </h3>
+            <h4
+              className="head4"
+              style={{ color: `${detail_color}`, fontSize: 21 }}
+            >
+              Tech Used: {techUsed}
+            </h4>
             <a
               href={target}
               target="_blank"

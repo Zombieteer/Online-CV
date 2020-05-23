@@ -64,6 +64,7 @@ export const ModalTempelate = ({ open, handleClose, handleopen, type }) => {
                   id="transition-modal-description"
                   className={classes.logo}
                   src={shobhit}
+                  alt="large-DP"
                 ></img>
                 <div className={classes.head}>
                   <h1>Shobhit Nigam</h1>

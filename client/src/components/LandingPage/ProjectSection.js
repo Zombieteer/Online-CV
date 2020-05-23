@@ -28,7 +28,7 @@ export const ProjectSection = () => {
 
   return (
     <div className="container" name="project">
-      <h1 className="heading head">Projects</h1>
+      <h1 className="head1 heading">Projects</h1>
       {projects.map((project) => (
         <Project project={project} />
       ))}

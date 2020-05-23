@@ -76,17 +76,15 @@ export const LetsTalk = () => {
   return (
     <Fragment>
       <div name="talk" className="talk">
-        <h1 className="head heading" style={{ paddingTop: 20 }}>
-          LET'S TALK
-        </h1>
+        <h1 className="head1 heading">LET'S TALK</h1>
         <div className="outer_contact_div">
           <div className="inner_contact_div">
-            <div>
+            <div className="mail_img">
               <img src={mail} alt="mail"></img>
             </div>
             <form className="form" onSubmit={submitHandler}>
               {/* <h1 className="Get-in-touch">Get In Touch</h1> */}
-              <div>
+              <div className="input-div">
                 <label htmlFor="form-name" className="label">
                   Name
                 </label>
@@ -100,7 +98,7 @@ export const LetsTalk = () => {
                   onClick={toggle}
                 />
               </div>
-              <div>
+              <div className="input-div">
                 <label htmlFor="exampleInputEmail1" className="label">
                   Email
                 </label>
@@ -115,7 +113,7 @@ export const LetsTalk = () => {
                   onClick={toggle}
                 />
               </div>
-              <div style={{ marginBottom: 30 }}>
+              <div className="input-div" style={{ marginBottom: 30 }}>
                 <label htmlFor="message" className="label">
                   Message
                 </label>
