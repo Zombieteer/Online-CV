@@ -134,7 +134,8 @@ export const LandingPage = () => {
         </div>
         <div className="about_front">
           <div className="intro">
-            <h1 className="head">
+            <h1 class="head">Shobhit Nigam |</h1>
+            <h1 className="head" style={{ fontSize: 38, margin: 0 }}>
               Full <span style={{ color: "orange" }}>Stack</span> Developer
             </h1>
             <h2 className="head2">
