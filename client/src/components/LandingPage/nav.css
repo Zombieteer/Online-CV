@@ -98,9 +98,13 @@
   margin: 30px;
   box-shadow: 1px 10px 20px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
+  border-radius: 10px !important;
 }
 .container {
-  margin: 0 5%;
+  padding: 0 5%;
+  background-image: url(../../public/project-background1.svg);
+  background-size: cover;
+  padding-bottom: 1px;
 }
 .heading {
   text-align: center;
@@ -147,12 +151,19 @@
 }
 
 /* Lets Talk*/
+
+.talk {
+  background: orange;
+  /* background: -webkit-linear-gradient(left, orange, orangered); */
+  background: -webkit-linear-gradient(left, aliceblue, #c3e9ff);
+  height: 100vh;
+}
 .outer_contact_div {
   width: 100%;
   padding: 45px 0px;
-  min-height: 100%;
-  background: orange;
-  background: -webkit-linear-gradient(left, orange, orangered);
+  /* min-height: 100%; */
+  /* background: orange;
+  background: -webkit-linear-gradient(left, orange, orangered); */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -165,7 +176,7 @@
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 60%;
   height: 70%;

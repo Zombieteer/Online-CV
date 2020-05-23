@@ -6,7 +6,10 @@ export const Project = ({
   project: { title, image, detail, target, detail_color, techUsed },
 }) => {
   return (
-    <Card className="project-card">
+    <Card
+      className="project-card"
+      style={{ borderTop: `${detail_color} solid 5px` }}
+    >
       <CardContent>
         <div className="project">
           <img className="mac-screen" src={image} alt="mac-screen"></img>

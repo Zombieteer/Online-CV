@@ -67,8 +67,8 @@ export const LetsTalk = () => {
 
   return (
     <Fragment>
-      <div name="talk">
-        <h1 className="head heading" style={{ paddingBottom: "2%" }}>
+      <div name="talk" className="talk">
+        <h1 className="head heading" style={{ paddingTop: 20 }}>
           LET'S TALK
         </h1>
         <div className="outer_contact_div">
