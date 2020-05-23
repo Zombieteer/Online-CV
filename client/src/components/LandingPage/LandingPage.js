@@ -120,8 +120,11 @@ export const LandingPage = () => {
               Full <span style={{ color: "orange" }}>Stack</span> Developer
             </h2>
             <h3 className="head3">
-              I <FavoriteIcon style={{ color: red[800] }} /> to built great user
-              experiences.
+              I{" "}
+              <FavoriteIcon
+                style={{ color: red[800], verticalAlign: "bottom" }}
+              />{" "}
+              to built great user experiences.
             </h3>
           </div>
           <div className="intro rightImage-Div">
