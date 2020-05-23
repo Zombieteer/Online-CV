@@ -32,11 +32,28 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
   <title>Shobhit Nigam | Full Stack Developer</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <div class="loader-wrapper">
+    <img src='./loadingImage.PNG'></img>
+    <img src='./loadinggif.svg' class='loadinggif' style=""></img>
+  </div>
   <div id="root"></div>
+
+  <script>
+    $(window).on('load', function () {
+      setTimeout(() => {
+        $(".loader-wrapper").fadeOut('fast')
+      }, 2000);
+    }
+    )
+
+  </script>
+
   <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
