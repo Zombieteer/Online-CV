@@ -48,6 +48,10 @@ export const LandingPage = () => {
   let checkleft = 10;
   var i = 1;
 
+  const refreshPage = () => {
+    window.location.reload(false);
+  };
+
   const [open, setOpen] = React.useState(false);
 
   const handleOpen = () => {
@@ -91,7 +95,7 @@ export const LandingPage = () => {
   return (
     <div>
       <div className="nav">
-        <div className="logo">
+        <div className="logo" onClick={refreshPage}>
           <img src={SN_logo} className="nav-home-logo" alt="shobhit-logo" />
         </div>
         <div style={{ display: "flex" }}>
