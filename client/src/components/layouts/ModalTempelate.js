@@ -5,6 +5,11 @@ import Fade from "@material-ui/core/Fade";
 import { makeStyles } from "@material-ui/core/styles";
 import CancelIcon from "@material-ui/icons/Cancel";
 import shobhit from "../../../src/public/logo.jpeg";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import Tooltip from "@material-ui/core/Tooltip";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -25,8 +30,8 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "50%",
   },
   head: {
-    fontSize: 44,
-    marginLeft: "10%",
+    textAlign: "center",
+    marginLeft: 50,
     paddingTop: "5%",
   },
 }));
@@ -60,7 +65,63 @@ export const ModalTempelate = ({ open, handleClose, handleopen, type }) => {
                   className={classes.logo}
                   src={shobhit}
                 ></img>
-                <h1 className={classes.head}>Shobhit Nigam</h1>
+                <div className={classes.head}>
+                  <h1>Shobhit Nigam</h1>
+                  <div style={{ padding: "20px 0px" }}>
+                    <Tooltip
+                      title="LinkedIn"
+                      arrow
+                      style={{ padding: "0px 25px" }}
+                    >
+                      <a
+                        href="https://www.linkedin.com/in/shobhit-nigam/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <LinkedInIcon className="contact_icon" />
+                      </a>
+                    </Tooltip>
+                    <Tooltip
+                      title="Github"
+                      arrow
+                      style={{ padding: "0px 25px" }}
+                    >
+                      <a
+                        href="https://github.com/Zombieteer"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <GitHubIcon className="contact_icon" />
+                      </a>
+                    </Tooltip>
+                    <Tooltip
+                      title="Twitter"
+                      arrow
+                      style={{ padding: "0px 25px" }}
+                    >
+                      <a
+                        href="https://twitter.com/ShobhitNigam37"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <TwitterIcon className="contact_icon" />
+                      </a>
+                    </Tooltip>
+                    <Tooltip
+                      title="Instagram"
+                      arrow
+                      style={{ padding: "0px 25px" }}
+                    >
+                      <a
+                        href="https://www.instagram.com/shobhman/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <InstagramIcon className="contact_icon" />
+                      </a>
+                    </Tooltip>
+                  </div>
+                </div>
               </div>
             </div>
           </Fade>

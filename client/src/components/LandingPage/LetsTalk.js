@@ -31,6 +31,7 @@ export const LetsTalk = () => {
     email: "",
     message: "",
   });
+  const [active, setActive] = useState([false, false, false]);
   const [mailSendIcon, setMailSendIcon] = useState(false);
 
   const [open, setOpen] = React.useState(false);
@@ -43,11 +44,16 @@ export const LetsTalk = () => {
     setOpen(false);
   };
 
+  const toggle = (e) => {
+    setActive([false, false, false]);
+    e.target.name === "name" && setActive([true, false, false]);
+    e.target.name === "email" && setActive([false, true, false]);
+    e.target.name === "message" && setActive([false, false, true]);
+  };
   const onChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
   const submitHandler = async (e) => {
     e.preventDefault();
-
     const config = {
       header: {
         "Content-Type": "application/json",
@@ -85,10 +91,11 @@ export const LetsTalk = () => {
                 <input
                   name="name"
                   type="text"
-                  className="input1"
+                  className={active[0] ? "input1 active" : "input1"}
                   value={form.name}
                   onChange={onChange}
                   required
+                  onClick={toggle}
                 />
               </div>
               <div>
@@ -100,9 +107,10 @@ export const LetsTalk = () => {
                   type="email"
                   aria-describedby="emailHelp"
                   value={form.email}
-                  className="input1"
+                  className={active[1] ? "input1 active" : "input1"}
                   onChange={onChange}
                   required
+                  onClick={toggle}
                 />
               </div>
               <div style={{ marginBottom: 30 }}>
@@ -114,9 +122,10 @@ export const LetsTalk = () => {
                   rows="5"
                   value={form.message}
                   onChange={onChange}
-                  className="input1"
+                  className={active[2] ? "input1 active" : "input1"}
                   required
                   placeholder="Start Typing..."
+                  onClick={toggle}
                 ></textarea>
               </div>
               <button type="submit" className="submit1">
