@@ -40,17 +40,19 @@
 
   <div class="loader-wrapper">
     <img src='./loadingImage.PNG'></img>
-    <img src='./loadinggif.svg' class='loadinggif' style=""></img>
+    <img src='./loadinggif.svg' class='loadinggif'></img>
   </div>
   <div id="root"></div>
 
   <script>
-    $(window).on('load', function () {
-      setTimeout(() => {
-        $(".loader-wrapper").fadeOut('fast')
-      }, 2000);
-    }
-    )
+    document.body.classList.add("stop-scroll");
+    // $(window).on('load', function () {
+    setTimeout(() => {
+      $(".loader-wrapper").fadeOut('fast')
+      document.body.classList.remove("stop-scroll");
+    }, 2000);
+    // }
+    // )
 
   </script>
 

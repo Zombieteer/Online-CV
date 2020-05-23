@@ -9,6 +9,10 @@
   align-items: center;
   background-color: #1e1e1e;
 }
+.stop-scroll {
+  height: 100%;
+  overflow: hidden;
+}
 
 .loadinggif {
   background-color: #1e1e1e;
