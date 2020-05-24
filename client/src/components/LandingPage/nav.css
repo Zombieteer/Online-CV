@@ -388,6 +388,8 @@ textarea {
   }
   .bottom-link {
     padding: 10px;
+    transition: color;
+    transition: all 0.1s ease;
   }
   .bottom-link.active {
     border: none;
