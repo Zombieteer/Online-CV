@@ -47,6 +47,9 @@
   box-shadow: 0px 0 8px #888888;
   border-top: 2px solid orange;
 }
+.tab-nav {
+  display: none;
+}
 
 .user-logo {
   height: 40px;
@@ -324,11 +327,16 @@ textarea {
   background-color: #f7fafc;
   /* margin: auto; */
   text-align: center;
+  height: 185px;
 }
 
 .contact_icon {
   /* margin: 20px; */
   color: #000;
+}
+
+.contact-DP-div {
+  display: none;
 }
 
 /*about */
@@ -340,6 +348,54 @@ textarea {
 }
 
 @media only screen and (max-width: 760px) {
+  .contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-DP-div {
+    display: block;
+  }
+
+  .contact-DP {
+    width: 80vw;
+    border-radius: 10px;
+  }
+  .more-contact {
+    flex-grow: 1;
+    margin-bottom: 100px;
+    padding: 20px 0px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .tab-nav {
+    display: block;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    bottom: 0;
+    box-shadow: 1px 0px 20px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
+    /* padding: 5px; */
+  }
+  .tab-nav-link {
+    /* text-decoration: none; */
+    list-style: none;
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-around;
+  }
+  .bottom-link {
+    padding: 10px;
+  }
+  .bottom-link.active {
+    border: none;
+    border-radius: 10px;
+    /* border-bottom: orange 0.5px solid; */
+    color: white;
+    background-color: rgb(3, 70, 88);
+  }
   .mail_img {
     display: none;
   }

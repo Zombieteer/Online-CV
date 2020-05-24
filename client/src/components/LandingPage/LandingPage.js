@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./nav.css";
 import BackgroungLogo from "./BackgroungLogo";
 import NavTags from "../layouts/NavTags";
+import TabNav from "../layouts/TabNav";
 import ProjectSection from "./ProjectSection";
 import LetsTalk from "./LetsTalk";
 import Contact from "./Contact";
@@ -106,6 +107,9 @@ export const LandingPage = () => {
           <div className="logo" onClick={openImage}>
             <img src={shobhit} className="user-logo" alt="shobhit-logo" />
           </div>
+        </div>
+        <div className="tab-nav">
+          <TabNav />
         </div>
       </div>
 
