@@ -63,10 +63,11 @@ export const LetsTalk = () => {
 
     try {
       setMailSendIcon(true);
-      await axios.post("/", form, config);
+      await axios.post("/api/home", form, config);
       setForm({ name: "", email: "", message: "" });
       setMailSendIcon(false);
       handleOpen();
+      toggle();
     } catch (error) {
       console.log(error);
     }
