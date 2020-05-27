@@ -38,15 +38,7 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <script>
-    document.body.classList.add("stop-scroll");
-    $(window).on('load', function () {
-      setTimeout(() => {
-        $(".loader-wrapper").fadeOut('fast')
-        document.body.classList.remove("stop-scroll");
-      }, 1000);
-    })
-  </script>
+
 
   <div class="loader-wrapper" style=" position: fixed;
                                       display: flex;
@@ -62,6 +54,15 @@
     <img src='./loadinggif.svg' class='loadinggif' style='  background-color: #1e1e1e;'></img>
   </div>
   <div id="root"></div>
+  <script>
+    document.body.classList.add("stop-scroll");
+    $(window).on('load', function () {
+      setTimeout(() => {
+        $(".loader-wrapper").fadeOut('fast')
+        document.body.classList.remove("stop-scroll");
+      }, 1000);
+    })
+  </script>
 
 
   <!--

@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const config = require("../config");
+// const config = require("../config");
 const nodemailer = require("nodemailer");
 
 let transporter = nodemailer.createTransport({
@@ -10,8 +10,8 @@ let transporter = nodemailer.createTransport({
   port: 587,
   secure: false, // true for 465, false for other ports
   auth: {
-    user: config.USER,
-    pass: config.PASS,
+    user: process.env.GMAIL_USER,
+    pass: process.env.APP_PASS,
   },
 });
 
@@ -31,8 +31,8 @@ router.post("/", (req, res) => {
   var content = `name: ${name} \n email: ${email} \n message: ${message} `;
 
   var mail = {
-    from: config.USER,
-    to: "aryan.nigam1996@gmail.com", // Change to email address that you want to receive messages on
+    from: process.env.GMAIL_USER,
+    to: "aryan.nigam1996@gmail.com",
     subject: `New Message from ${name}`,
     text: content,
   };
