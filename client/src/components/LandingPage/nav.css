@@ -93,6 +93,10 @@
   box-shadow: 5px 5px 10px #888888;
 }
 
+.nav-item-link li:hover a {
+  color: orange;
+}
+
 .basic-about {
   height: 85vh;
 }
@@ -347,6 +351,12 @@ textarea {
   display: flex;
 }
 
+.heart-icon {
+  color: orangered;
+  vertical-align: baseline;
+}
+/* style={{ color: red[800], verticalAlign: "baseline" }} */
+
 @media only screen and (max-width: 760px) {
   .contact {
     height: 100vh;
@@ -357,6 +367,10 @@ textarea {
     display: block;
   }
 
+  .heart-icon {
+    color: orangered;
+    vertical-align: bottom;
+  }
   .contact-DP {
     width: 80vw;
     border-radius: 10px;
@@ -390,6 +404,7 @@ textarea {
     padding: 10px;
     transition: color;
     transition: all 0.1s ease;
+    color: black;
   }
   .bottom-link.active {
     border: none;

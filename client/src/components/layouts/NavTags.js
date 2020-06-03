@@ -5,7 +5,6 @@ export const NavTags = () => {
   return (
     <ul className="nav-item-link">
       <li>
-        {" "}
         <Link activeClass="active" to="about" spy={true} smooth={true}>
           My skills
         </Link>

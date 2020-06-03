@@ -126,7 +126,8 @@ export const LandingPage = () => {
             <h3 className="head3">
               I{" "}
               <FavoriteIcon
-                style={{ color: red[800], verticalAlign: "bottom" }}
+                className="heart-icon"
+                // style={{ color: red[800], verticalAlign: "baseline" }}
               />{" "}
               to built great user experiences.
             </h3>
